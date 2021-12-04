@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Интернет-магазин</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script ENGINE="text/javascript" src="https://code.jquery.com/jquery-1.11.2.js "></script>
+    <script src="https://computerlessons.mega8.ru/tema/js/jquery.min.js"></script>
+    <script src="https://computerlessons.mega8.ru/tema/js/js.js"></script>
+    <script type="text/javascript" src="jquery-1.4.4.min.js"></script>
+    <script type="text/javascript" src="cms.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            $('html, body').scrollTop($(document).height());
+
+            $("#scroll-top > button").on("click", function (e) {
+                var body = $("html, body");
+                body.stop().animate({ scrollTop: 0 }, 500, "swing");
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <div id="scroll-top">
+        <button><span data-hover="Наверх"><i class="fa fa-arrow-up"></i></span></button>
+    </div>
+    <!--
+    <div class="topnav" id="myTopnav">
+        <a href="tryhow_js_topnav.php" class="active">Главная</a>
+        <a href="news.htm">Новости</a>
+        <a href="contacts.htm">Контакт</a>
+        <a href="about.htm">О Нас</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <div style="padding-left:16px">
+        <h2>Отзывчивый верхний навигатор</h2>
+        <p>Измените размер окна браузера, чтобы увидеть, как он работает.</p>
+    </div>
+
+-->
+
+
+    <header>
+
+        <nav>
+            <div class="logo-box">
+                <h1 class="logo">
+                    <a href="/">
+                        <img src="http://html5book.ru/wp-content/uploads/2015/01/logo-header.png">
+                    </a>
+                </h1>
+            </div>
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">КАТАЛОГ</a></li>
+                <li><a href="#">АКЦИИ</a></li>
+                <li><a href="#">КОНТАКТЫ</a></li>
+            </ul>
+        </nav>
+
+        <!--
+        <button class="btn-cart" type="button">Корзина</button>
+
+-->
+    </header>
+
+    <div>
+
+        <button id="login" class="button blue">
+            <i class="fa fa-shopping-basket"></i>
+            <span>Корзина</span>
+        </button>
+        <script type="text/javascript">
+
+            jQuery(document).ready(function ($) {
+
+                $('.button#login').on('click', function (e) {
+                    alert('Открываем модальное окно');
+                });
+
+                $('.button#register').on('click', function (e) {
+                    e.preventDefault();
+                    alert('Перенаправляем на страницу с корзиной');
+                });
+
+            });
+
+
+        </script>
+
+    </div>
+    <main>
+        <article>
+            <div class="products"></div>
+        </article>
+    </main>
+
+    <div class="footer">
+
+        <br>
+        <ul>
+            <li>Контактная информация компании ООО "ТГК":</li>
+            <li>Телефон: +7 (495) 123-45-67;</li>
+            <li>E-mail: <a href="mailto:mail@tgk.ru">mail@tgk.ru</a></li>
+        </ul>
+
+        <a href="index.html" target="_self" alt="Главная страница сайта">Главная</a>
+        <a href="contacts.html" target="_self" alt="Контактная информация">Контакты</a>
+        <br>
+        <font face="Arial, Monotype"><b>Copyright &copy; 2021 - "Все права защищены"</b></font>
+
+    </div>
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
